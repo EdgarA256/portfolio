@@ -69,10 +69,11 @@ export function Nav() {
       }
     };
     document.addEventListener("keydown", onKey);
+    const toggle = toggleRef.current;
     return () => {
       document.body.style.overflow = prev;
       document.removeEventListener("keydown", onKey);
-      toggleRef.current?.focus();
+      toggle?.focus();
     };
   }, [open]);
 
