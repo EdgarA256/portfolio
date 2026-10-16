@@ -40,9 +40,9 @@ export const profile = {
   shortName: "Edgar",
   initials: "AER",
   wordmark: "Agaba Edgar",
-  eyebrow: "Student · Agriculture & Forestry",
+  eyebrow: "Student · Accounting & Finance",
   role: "BSc.AF Student · Kabale University · Year Two",
-  tagline: "Growing knowledge. Rooted in purpose. Building a sustainable future.",
+  tagline: "Building clarity. Grounded in integrity. Shaping a future in finance.",
   email: "",
   whatsapp: "",
   linkedin: "",
@@ -60,106 +60,106 @@ export const navLinks: NavLink[] = [
 ];
 
 export const aboutHighlights = [
-  { label: "Current focus", value: "Agriculture & Forestry" },
+  { label: "Current focus", value: "Accounting & Finance" },
   { label: "Academic home", value: "Kabale University" },
   { label: "Current stage", value: "Second year, BSc.AF" },
-  { label: "Outlook", value: "Learning, growth, sustainability, collaboration" },
+  { label: "Outlook", value: "Learning, growth, integrity, precision" },
 ];
 
 export const education = {
   institution: "Kabale University",
-  programme: "Bachelor of Science in Agriculture and Forestry",
+  programme: "Bachelor of Science in Accounting and Finance",
   abbreviation: "BSc.AF",
   level: "Second year · Ongoing",
   summary:
-    "The programme brings together the science of crop and livestock production with the management of forests, soils, and land resources. It is the study of living systems — how they grow, how they are sustained, and how people can work with them responsibly.",
+    "The programme combines the principles of accounting — measuring, recording, and communicating financial information — with the tools of finance: investment, risk, capital, and value. It is the language of business and the foundation of sound decision-making.",
   future: [
-    "Relevant coursework",
-    "Fieldwork and practical learning",
-    "Research interests",
-    "Academic projects",
-    "Certifications",
+    "Financial reporting & analysis",
+    "Taxation & auditing",
+    "Corporate finance",
+    "Research projects",
+    "Professional certifications",
   ],
 };
 
 export const interests: Interest[] = [
   {
-    title: "Sustainable Agriculture",
+    title: "Financial Reporting & Analysis",
     description:
-      "Farming systems that protect soil, water, and biodiversity while producing reliable food.",
-    icon: "sprout",
+      "Translating business activity into clear, reliable financial information that drives decisions.",
+    icon: "chart",
   },
   {
-    title: "Forestry & Forest Conservation",
+    title: "Auditing & Assurance",
     description:
-      "The stewardship of forests as living ecosystems, resources, and climate allies.",
-    icon: "trees",
+      "Ensuring accuracy, transparency, and trust in the numbers that organisations depend on.",
+    icon: "microscope",
   },
   {
-    title: "Environmental Sustainability",
+    title: "Investment & Capital Markets",
     description:
-      "Balancing human needs with the health of the natural systems we depend on.",
-    icon: "leaf",
+      "How capital moves, grows, and is allocated across markets, time, and opportunity.",
+    icon: "trending-up",
   },
   {
-    title: "Soil & Land Resource Management",
+    title: "Taxation & Regulatory Compliance",
     description:
-      "Understanding and caring for the ground beneath us as the foundation of life.",
-    icon: "mountain",
+      "The rules that govern financial systems and keep them accountable to stakeholders.",
+    icon: "scale",
   },
   {
-    title: "Food Security & Resilient Systems",
+    title: "Corporate Finance & Valuation",
     description:
-      "Building food systems that can withstand change and nourish communities.",
-    icon: "wheat",
+      "The decisions that shape how businesses create, manage, and measure value.",
+    icon: "briefcase",
   },
   {
-    title: "Biodiversity & Ecosystem Stewardship",
+    title: "Risk Management & Internal Controls",
     description:
-      "Protecting the variety of life that keeps ecosystems — and us — resilient.",
-    icon: "bird",
+      "Identifying, measuring, and mitigating threats to financial stability and integrity.",
+    icon: "shield",
   },
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Practical & Technical",
-    note: "Hands-on foundations being built through study and practice.",
+    title: "Accounting Foundations",
+    note: "Core principles being built through study and practice.",
     items: [
-      "Field and laboratory practice",
-      "Crop and soil handling",
-      "Forestry and land assessment",
-      "Observation and data collection",
+      "Bookkeeping and ledger management",
+      "Financial statement preparation",
+      "Recording and classifying transactions",
+      "Understanding accounting standards",
     ],
   },
   {
-    title: "Digital & Research",
-    note: "Tools for inquiry, analysis, and evidence-based thinking.",
+    title: "Financial Tools & Analysis",
+    note: "Working with data to support sound financial decisions.",
+    items: [
+      "Excel and spreadsheet modelling",
+      "Ratio and trend analysis",
+      "Budgeting and forecasting",
+      "Data interpretation and presentation",
+    ],
+  },
+  {
+    title: "Research & Communication",
+    note: "Gathering evidence and presenting it with clarity.",
     items: [
       "Academic research and referencing",
-      "Data handling and spreadsheets",
-      "Geospatial and mapping tools",
-      "Literature review and synthesis",
+      "Report writing and documentation",
+      "Presenting findings clearly",
+      "Collaborative projects and teamwork",
     ],
   },
   {
-    title: "Communication & Collaboration",
-    note: "Working with others to share ideas and get things done.",
+    title: "Professional Growth",
+    note: "The habits that build a career in accounting and finance.",
     items: [
-      "Academic writing",
-      "Teamwork and group projects",
-      "Presenting ideas clearly",
-      "Active listening and feedback",
-    ],
-  },
-  {
-    title: "Personal & Professional Growth",
-    note: "The habits that carry learning forward.",
-    items: [
+      "Attention to detail",
+      "Integrity and ethical awareness",
+      "Time management and discipline",
       "Curiosity and self-directed learning",
-      "Consistency and discipline",
-      "Adaptability and resilience",
-      "Openness to mentorship",
     ],
   },
 ];
@@ -167,7 +167,7 @@ export const skillGroups: SkillGroup[] = [
 export const projects: Project[] = [];
 
 export const journeyIntro =
-  "This is where the story continues beyond the classroom — lessons learned, field experiences, books and ideas, and the small milestones that mark a student's path. New entries will appear here as the journey unfolds.";
+  "This is where the story continues beyond the classroom — lessons learned, practical exposure, books and ideas, and the small milestones that mark a student's path. New entries will appear here as the journey unfolds.";
 
 export const journeyThemes: JourneyTheme[] = [
   {
@@ -175,16 +175,16 @@ export const journeyThemes: JourneyTheme[] = [
     description: "What study, practice, and failure have taught me so far.",
   },
   {
-    title: "Field experiences",
-    description: "Time spent outside lecture halls, working with land and people.",
+    title: "Practical exposure",
+    description: "Time spent beyond lectures, applying concepts to real scenarios.",
   },
   {
     title: "Books & ideas",
-    description: "The thinking that is shaping how I see agriculture and forestry.",
+    description: "The thinking that is shaping how I see accounting and finance.",
   },
   {
-    title: "Sustainability observations",
-    description: "What I notice about how communities and ecosystems interact.",
+    title: "Industry observations",
+    description: "What I notice about how businesses and financial systems interact.",
   },
   {
     title: "Milestones",
@@ -204,31 +204,31 @@ export const opportunities: Opportunity[] = [
     icon: "compass",
   },
   {
-    title: "Agriculture & forestry professionals",
+    title: "Accounting & finance professionals",
     description: "Practitioners doing the work I am preparing to join.",
-    icon: "sprout",
+    icon: "briefcase",
   },
   {
-    title: "Sustainability-focused organisations",
-    description: "Teams turning environmental intent into real-world impact.",
-    icon: "globe",
+    title: "Firms & organisations",
+    description: "Teams where financial insight creates real-world value.",
+    icon: "building",
   },
   {
     title: "Internship & early-career providers",
-    description: "Opportunities to learn by doing, in the field and beyond.",
+    description: "Opportunities to learn by doing, in practice and beyond.",
     icon: "handshake",
   },
   {
-    title: "Community & environmental initiatives",
-    description: "Local efforts where contribution and learning go together.",
-    icon: "leaf",
+    title: "Community initiatives",
+    description: "Local efforts where financial literacy and opportunity meet.",
+    icon: "globe",
   },
 ];
 
 export const contact = {
-  headline: "Let's grow something meaningful together.",
+  headline: "Let's build something valuable together.",
   invitation:
-    "Whether you are a student, a mentor, a professional, or simply someone who cares about land, food, and forests — I would be glad to hear from you. The best conversations often begin with a simple hello.",
+    "Whether you are a student, a mentor, a professional, or simply someone who values clarity and integrity in finance — I would be glad to hear from you.",
   availability:
-    "Open to mentorship, collaboration, fieldwork, internships, and conversations about agriculture, forestry, and sustainability.",
+    "Open to mentorship, collaboration, internships, and conversations about accounting, finance, and professional growth.",
 };

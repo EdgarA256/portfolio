@@ -4,14 +4,14 @@ type SectionProps = {
   id: string;
   children: ReactNode;
   className?: string;
-  tone?: "ivory" | "ink";
+  tone?: "base" | "section";
 };
 
-export function Section({ id, children, className = "", tone = "ivory" }: SectionProps) {
+export function Section({ id, children, className = "", tone = "base" }: SectionProps) {
   const base =
-    tone === "ink"
-      ? "bg-ink text-ivory"
-      : "bg-ivory text-ink";
+    tone === "section"
+      ? "bg-section text-text"
+      : "bg-bg text-text";
 
   return (
     <section id={id} className={`${base} ${className}`}>

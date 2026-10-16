@@ -78,7 +78,7 @@ export function Nav() {
   }, [open]);
 
   const headerBg = scrolled
-    ? "border-line/70 bg-ivory/85 backdrop-blur-md"
+    ? "border-border/70 bg-bg/85 backdrop-blur-md"
     : "border-transparent bg-transparent";
 
   return (
@@ -95,15 +95,15 @@ export function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                 aria-current={isActive ? "page" : undefined}
+                aria-current={isActive ? "page" : undefined}
                 className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                  isActive ? "text-ink" : "text-muted hover:text-ink"
+                  isActive ? "text-text" : "text-muted hover:text-text"
                 }`}
               >
                 {isActive && (
                   <motion.span
                     layoutId="nav-active"
-                    className="absolute inset-0 rounded-full bg-sand"
+                    className="absolute inset-0 rounded-full bg-surface"
                     transition={{ type: "spring", stiffness: 400, damping: 34 }}
                   />
                 )}
@@ -116,7 +116,7 @@ export function Nav() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-ivory transition-all duration-300 hover:bg-forest hover:shadow-soft sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-bg transition-all duration-300 hover:bg-accent-bright hover:shadow-soft sm:inline-flex"
           >
             Let&apos;s Connect
             <Icon name="arrow-right" className="h-4 w-4" />
@@ -129,7 +129,7 @@ export function Nav() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Close menu" : "Open menu"}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-ivory/60 text-ink transition-colors hover:bg-sand lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg/60 text-text transition-colors hover:bg-surface lg:hidden"
           >
             <Icon name={open ? "x" : "menu"} className="h-5 w-5" />
           </button>
@@ -146,7 +146,7 @@ export function Nav() {
             animate={reduce ? { opacity: 1 } : { opacity: 1, height: "auto" }}
             exit={reduce ? { opacity: 0 } : { opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-line/70 bg-ivory/95 backdrop-blur-md lg:hidden"
+            className="overflow-hidden border-t border-border/70 bg-bg/95 backdrop-blur-md lg:hidden"
           >
             <nav
               className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-6 py-6 sm:px-8"
@@ -160,7 +160,7 @@ export function Nav() {
                   initial={reduce ? { opacity: 0 } : { opacity: 0, x: -14 }}
                   animate={reduce ? { opacity: 1 } : { opacity: 1, x: 0 }}
                   transition={{ delay: reduce ? 0 : 0.05 * i + 0.08 }}
-                  className="flex items-center justify-between rounded-2xl px-4 py-4 text-base font-medium text-ink transition-colors hover:bg-sand"
+                  className="flex items-center justify-between rounded-2xl px-4 py-4 text-base font-medium text-text transition-colors hover:bg-surface"
                 >
                   {link.label}
                   <Icon name="arrow-right" className="h-4 w-4 text-muted" />
@@ -169,7 +169,7 @@ export function Nav() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-ink px-5 py-4 text-sm font-semibold text-ivory"
+                className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-4 text-sm font-semibold text-bg"
               >
                 Let&apos;s Connect
                 <Icon name="arrow-right" className="h-4 w-4" />

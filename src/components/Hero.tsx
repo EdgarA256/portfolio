@@ -26,12 +26,12 @@ export function Hero() {
   const itemVariants = reduce ? ({ hidden: {}, show: {} } as const) : item;
 
   return (
-    <section id="top" className="relative overflow-hidden bg-ivory pt-20">
+    <section id="top" className="relative overflow-hidden bg-bg pt-20">
       <div className="absolute inset-0 texture-lines" aria-hidden="true" />
 
       <svg
         viewBox="0 0 600 600"
-        className="pointer-events-none absolute -right-40 -top-40 h-[42rem] w-[42rem] text-forest/[0.05]"
+        className="pointer-events-none absolute -right-40 -top-40 h-[42rem] w-[42rem] text-accent/[0.06]"
         fill="none"
         stroke="currentColor"
         strokeWidth="1"
@@ -48,9 +48,9 @@ export function Hero() {
         <motion.div variants={variants} initial="hidden" animate="show" className="flex flex-col">
           <motion.p
             variants={itemVariants}
-            className="inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-forest"
+            className="inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-accent"
           >
-            <span className="h-2 w-2 rounded-full bg-lime" aria-hidden="true" />
+            <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
             {profile.eyebrow}
           </motion.p>
 
@@ -59,7 +59,7 @@ export function Hero() {
             className="mt-7 font-serif text-balance text-5xl font-medium leading-[1.02] tracking-tight sm:text-6xl md:text-7xl"
           >
             Agaba{" "}
-            <span className="italic text-forest">Edgar</span>
+            <span className="italic text-accent">Edgar</span>
             <br />
             Ruteisire
           </motion.h1>
@@ -69,22 +69,22 @@ export function Hero() {
             className="mt-7 max-w-xl text-lg leading-relaxed text-muted md:text-xl"
           >
             An emerging professional at the intersection of{" "}
-            <span className="font-medium text-ink">agriculture, forestry, and sustainability</span>{" "}
-            — learning to grow food, steward forests, and build systems that last.
+            <span className="font-medium text-text">accounting, finance, and integrity</span>{" "}
+            — learning to measure value, manage risk, and build systems that last.
           </motion.p>
 
           <motion.div
             variants={itemVariants}
-            className="mt-6 inline-flex w-fit items-center gap-2.5 rounded-full border border-line bg-sand/70 px-4 py-2 text-sm font-medium text-forest"
+            className="mt-6 inline-flex w-fit items-center gap-2.5 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-accent"
           >
-            <Icon name="graduation-cap" className="h-4 w-4 text-moss" />
+            <Icon name="graduation-cap" className="h-4 w-4 text-accent-dim" />
             {profile.role}
           </motion.div>
 
           <motion.div variants={itemVariants} className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-4 text-sm font-semibold text-ivory transition-all duration-300 hover:bg-forest hover:shadow-lift"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-accent px-7 py-4 text-sm font-semibold text-bg transition-all duration-300 hover:bg-accent-bright hover:shadow-lift"
             >
               Let&apos;s Connect
               <Icon
@@ -94,7 +94,7 @@ export function Hero() {
             </a>
             <a
               href="#journey"
-              className="inline-flex items-center gap-2.5 rounded-full border border-ink/15 px-7 py-4 text-sm font-semibold text-ink transition-all duration-300 hover:border-forest hover:bg-sand"
+              className="inline-flex items-center gap-2.5 rounded-full border border-border px-7 py-4 text-sm font-semibold text-text transition-all duration-300 hover:border-accent hover:bg-surface"
             >
               Explore My Journey
             </a>
@@ -115,15 +115,15 @@ export function Hero() {
           className="relative mx-auto w-full max-w-sm lg:max-w-none"
         >
           <div
-            className="absolute -inset-4 -z-10 rounded-[2.25rem] border border-lime/40"
+            className="absolute -inset-4 -z-10 rounded-[2.25rem] border border-accent/30"
             aria-hidden="true"
           />
           <PortraitPlaceholder />
-          <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-line bg-ivory px-5 py-4 shadow-soft sm:block">
-            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-muted">
+          <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-border bg-bg px-5 py-4 shadow-soft sm:block">
+            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-faint">
               Studying at
             </p>
-            <p className="mt-1 font-serif text-base font-medium text-ink">Kabale University</p>
+            <p className="mt-1 font-serif text-base font-medium text-text">Kabale University</p>
           </div>
         </motion.div>
       </div>
@@ -134,7 +134,7 @@ export function Hero() {
         initial={reduce ? { opacity: 0 } : { opacity: 0, y: 10 }}
         animate={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="group absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-muted transition-colors hover:text-ink md:flex"
+        className="group absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-muted transition-colors hover:text-text md:flex"
       >
         <span className="text-[0.6rem] font-semibold uppercase tracking-[0.3em]">Scroll</span>
         <motion.span

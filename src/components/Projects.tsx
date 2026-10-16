@@ -13,9 +13,9 @@ export function ProjectCard({ project }: { project: Project }) {
       whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-ivory"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface"
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-sand">
+      <div className="relative aspect-[16/10] overflow-hidden bg-raised">
         {project.image ? (
           <img
             src={project.image}
@@ -26,22 +26,22 @@ export function ProjectCard({ project }: { project: Project }) {
         ) : (
           <div className="texture-grain absolute inset-0" aria-hidden="true" />
         )}
-        <span className="absolute left-4 top-4 rounded-full bg-ivory/90 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-forest">
+        <span className="absolute left-4 top-4 rounded-full bg-bg/90 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-accent">
           {project.category}
         </span>
       </div>
       <div className="flex flex-1 flex-col p-6">
-        <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-muted">
+        <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-faint">
           {project.date}
         </p>
-        <h3 className="mt-2 font-serif text-xl font-medium leading-snug text-ink">
+        <h3 className="mt-2 font-serif text-xl font-medium leading-snug text-text">
           {project.title}
         </h3>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{project.description}</p>
         {project.link && (
           <a
             href={project.link}
-            className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-forest"
+            className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-accent"
           >
             View project
             <Icon name="arrow-up-right" className="h-4 w-4" />
@@ -54,8 +54,8 @@ export function ProjectCard({ project }: { project: Project }) {
 
 const categories = [
   "Academic projects",
-  "Fieldwork",
   "Research",
+  "Financial analysis",
   "Community initiatives",
   "Volunteering",
 ];
@@ -70,29 +70,29 @@ export function Projects() {
         title={
           <>
             Work in
-            <span className="italic text-forest"> progress.</span>
+            <span className="italic text-accent"> progress.</span>
           </>
         }
       />
 
       {empty ? (
         <Reveal>
-          <div className="mt-16 flex flex-col items-center rounded-3xl border border-dashed border-line bg-sand/40 px-8 py-16 text-center md:py-20">
-            <span className="flex h-16 w-16 items-center justify-center rounded-2xl border border-line bg-ivory text-forest">
+          <div className="mt-16 flex flex-col items-center rounded-3xl border border-dashed border-border bg-surface/40 px-8 py-16 text-center md:py-20">
+            <span className="flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-bg text-accent">
               <Icon name="flask" className="h-7 w-7" />
             </span>
-            <h3 className="mt-7 max-w-md font-serif text-3xl font-medium leading-tight tracking-tight text-ink md:text-4xl">
+            <h3 className="mt-7 max-w-md font-serif text-3xl font-medium leading-tight tracking-tight text-text md:text-4xl">
               This space is waiting for its first entry.
             </h3>
             <p className="mt-4 max-w-lg text-[0.95rem] leading-relaxed text-muted">
-              Genuine projects — academic work, fieldwork, research, and community initiatives —
-              will appear here as they happen. Nothing is invented to fill the space.
+              Genuine projects — academic work, research, financial analysis, and community
+              initiatives — will appear here as they happen. Nothing is invented to fill the space.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2.5">
               {categories.map((c) => (
                 <span
                   key={c}
-                  className="rounded-full border border-line bg-ivory px-4 py-2 text-xs font-medium text-muted"
+                  className="rounded-full border border-border bg-bg px-4 py-2 text-xs font-medium text-muted"
                 >
                   {c}
                 </span>

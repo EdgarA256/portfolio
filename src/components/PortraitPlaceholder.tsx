@@ -10,13 +10,13 @@ export function PortraitPlaceholder({ className = "" }: PortraitProps) {
 
   return (
     <div
-      className={`relative aspect-[4/5] w-full overflow-hidden rounded-[1.75rem] border border-line bg-sand ${className}`}
+      className={`relative aspect-[4/5] w-full overflow-hidden rounded-[1.75rem] border border-border bg-surface ${className}`}
     >
       <div className="absolute inset-0 texture-grain" aria-hidden="true" />
 
       <svg
         viewBox="0 0 200 250"
-        className="absolute inset-0 h-full w-full text-moss/30"
+        className="absolute inset-0 h-full w-full text-muted/20"
         fill="none"
         stroke="currentColor"
         strokeWidth="1"
@@ -30,17 +30,17 @@ export function PortraitPlaceholder({ className = "" }: PortraitProps) {
       </svg>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
-        <span className="font-serif text-6xl font-light tracking-tight text-forest/40">
+        <span className="font-serif text-6xl font-light tracking-tight text-accent/50">
           {profile.initials}
         </span>
-        <span className="text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-moss/70">
+        <span className="text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-muted/70">
           Portrait
         </span>
       </div>
 
       <motion.span
         aria-hidden="true"
-        className="absolute right-4 top-4 h-2 w-2 rounded-full bg-lime"
+        className="absolute right-4 top-4 h-2 w-2 rounded-full bg-accent"
         animate={reduce ? undefined : { scale: [1, 1.5, 1], opacity: [0.6, 1, 0.6] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       />

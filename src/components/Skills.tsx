@@ -12,16 +12,16 @@ export function Skills() {
         title={
           <>
             Capacities I&apos;m
-            <span className="italic text-forest"> actively building.</span>
+            <span className="italic text-accent"> actively building.</span>
           </>
         }
       />
 
       <Reveal>
-        <div className="mt-8 flex items-start gap-3 rounded-2xl border border-lime/40 bg-lime/10 p-5">
-          <Icon name="sprout" className="mt-0.5 h-5 w-5 shrink-0 text-forest" />
-          <p className="text-sm leading-relaxed text-ink/85">
-            <span className="font-semibold text-ink">Skills in development.</span> These are the
+        <div className="mt-8 flex items-start gap-3 rounded-2xl border border-accent/30 bg-accent/5 p-5">
+          <Icon name="sprout" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+          <p className="text-sm leading-relaxed text-text/80">
+            <span className="font-semibold text-text">Skills in development.</span> These are the
             capacities I am growing through study and practice — an honest snapshot of a student
             still in the making, not a claim of mastery.
           </p>
@@ -31,13 +31,13 @@ export function Skills() {
       <div className="mt-14 flex flex-col">
         {skillGroups.map((group, gi) => (
           <Reveal key={group.title}>
-            <div className="grid gap-6 border-t border-line py-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-14">
+            <div className="grid gap-6 border-t border-border py-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-14">
               <div className="flex items-start gap-5">
-                <span className="font-serif text-2xl font-light italic text-moss">
+                <span className="font-serif text-2xl font-light italic text-accent-dim">
                   {String(gi + 1).padStart(2, "0")}
                 </span>
                 <div>
-                  <h3 className="font-serif text-2xl font-medium tracking-tight text-ink">
+                  <h3 className="font-serif text-2xl font-medium tracking-tight text-text">
                     {group.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted">{group.note}</p>
@@ -47,9 +47,9 @@ export function Skills() {
                 {group.items.map((skill) => (
                   <li
                     key={skill}
-                    className="flex items-center gap-3 rounded-xl border border-line bg-sand/50 px-4 py-3.5 text-[0.95rem] font-medium text-ink/90 transition-colors duration-200 hover:border-moss/40 hover:bg-sand"
+                    className="flex items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3.5 text-[0.95rem] font-medium text-text/85 transition-colors duration-200 hover:border-accent/50 hover:bg-raised"
                   >
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-lime" aria-hidden="true" />
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
                     {skill}
                   </li>
                 ))}

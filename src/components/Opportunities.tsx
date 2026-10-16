@@ -13,7 +13,7 @@ export function Opportunities() {
         title={
           <span className="text-center">
             Open to
-            <span className="italic text-forest"> meaningful</span> connection.
+            <span className="italic text-accent"> meaningful</span> connection.
           </span>
         }
         intro="If any of the following sounds like you, I would be glad to hear from you."
@@ -23,10 +23,10 @@ export function Opportunities() {
         {opportunities.map((opp, i) => (
           <Reveal key={opp.title} delay={(i % 3) * 0.08}>
             <div className="group flex flex-col gap-4">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-line bg-sand/70 text-forest transition-all duration-300 group-hover:border-lime group-hover:bg-lime/20 group-hover:text-ink">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-border bg-surface text-accent transition-all duration-300 group-hover:border-accent group-hover:bg-accent/10 group-hover:text-accent-bright">
                 <Icon name={opp.icon} className="h-5 w-5" />
               </span>
-              <h3 className="font-serif text-xl font-medium leading-snug tracking-tight text-ink">
+              <h3 className="font-serif text-xl font-medium leading-snug tracking-tight text-text">
                 {opp.title}
               </h3>
               <p className="text-[0.95rem] leading-relaxed text-muted">{opp.description}</p>
@@ -36,9 +36,9 @@ export function Opportunities() {
       </div>
 
       <Reveal className="mt-20">
-        <div className="flex flex-col items-center justify-between gap-6 rounded-3xl border border-line bg-ivory px-8 py-10 text-center sm:px-12 md:flex-row md:text-left">
+        <div className="flex flex-col items-center justify-between gap-6 rounded-3xl border border-border bg-surface px-8 py-10 text-center sm:px-12 md:flex-row md:text-left">
           <div>
-            <h3 className="font-serif text-2xl font-medium tracking-tight text-ink md:text-3xl">
+            <h3 className="font-serif text-2xl font-medium tracking-tight text-text md:text-3xl">
               Have an opportunity, a question, or simply a shared interest?
             </h3>
             <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-muted">
@@ -47,7 +47,7 @@ export function Opportunities() {
           </div>
           <a
             href="#contact"
-            className="group inline-flex shrink-0 items-center gap-2.5 rounded-full bg-ink px-7 py-4 text-sm font-semibold text-ivory transition-all duration-300 hover:bg-forest hover:shadow-lift"
+            className="group inline-flex shrink-0 items-center gap-2.5 rounded-full bg-accent px-7 py-4 text-sm font-semibold text-bg transition-all duration-300 hover:bg-accent-bright hover:shadow-lift"
           >
             Start a conversation
             <Icon

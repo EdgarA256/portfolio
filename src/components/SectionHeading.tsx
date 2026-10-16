@@ -6,7 +6,7 @@ type SectionHeadingProps = {
   title: ReactNode;
   intro?: string;
   align?: "left" | "center";
-  tone?: "ivory" | "ink";
+  tone?: "base" | "section";
 };
 
 export function SectionHeading({
@@ -14,19 +14,19 @@ export function SectionHeading({
   title,
   intro,
   align = "left",
-  tone = "ivory",
+  tone = "base",
 }: SectionHeadingProps) {
   const alignCls = align === "center" ? "items-center text-center" : "items-start text-left";
-  const introColor = tone === "ink" ? "text-ivory/70" : "text-muted";
+  const introColor = tone === "section" ? "text-text/60" : "text-muted";
 
   return (
     <div className={`flex flex-col gap-5 ${alignCls}`}>
       <Reveal>
-        <span className="inline-flex items-center gap-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-forest">
-          <span className="h-px w-8 bg-lime" aria-hidden="true" />
+        <span className="inline-flex items-center gap-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-accent">
+          <span className="h-px w-8 bg-accent" aria-hidden="true" />
           {eyebrow}
           {align === "center" && (
-            <span className="h-px w-8 bg-lime" aria-hidden="true" />
+            <span className="h-px w-8 bg-accent" aria-hidden="true" />
           )}
         </span>
       </Reveal>
