@@ -4,10 +4,9 @@ import { Reveal } from "./Reveal";
 import { Wordmark } from "./Wordmark";
 
 const socialLinks = [
-  { label: "LinkedIn", icon: "linkedin", href: "#" },
-  { label: "X / Twitter", icon: "twitter", href: "#" },
-  { label: "GitHub", icon: "github", href: "#" },
-  { label: "Email", icon: "mail", href: "#" },
+  { label: "X / Twitter", icon: "twitter", href: "https://x.com/edgarrut5" },
+  { label: "Facebook", icon: "facebook", href: "https://www.facebook.com/profile.php?id=61550744050874" },
+  { label: "GitHub", icon: "github", href: "https://github.com/EdgarA256" },
 ];
 
 function ContactChannels() {

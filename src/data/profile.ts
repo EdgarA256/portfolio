@@ -56,7 +56,11 @@ export const profile = {
   whatsapp: "",
   linkedin: "",
   location: "Kabale, Uganda",
-  socials: [] as { label: string; href: string; icon: string }[],
+  socials: [
+    { label: "X / Twitter", href: "https://x.com/edgarrut5", icon: "twitter" },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61550744050874", icon: "facebook" },
+    { label: "GitHub", href: "https://github.com/EdgarA256", icon: "github" },
+  ],
   registrationNumber: "2025/A/KAF/1686/F",
   idNumber: "2501501686",
   faculty: "FEMS",
