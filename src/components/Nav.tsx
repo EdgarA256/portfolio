@@ -13,10 +13,6 @@ export function Nav() {
   const reduce = useReducedMotion();
 
   useEffect(() => {
-    if (window.location.hash === "#menu") setOpen(true);
-  }, []);
-
-  useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
