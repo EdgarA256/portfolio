@@ -53,7 +53,8 @@ export const profile = {
   role: "BSc.AF Student · Kabale University · Year Two",
   tagline: "Building clarity. Grounded in integrity. Shaping a future in finance.",
   email: "",
-  whatsapp: "",
+  whatsapp: "+256 789 268 084",
+  phone: "+256 789 268 084",
   linkedin: "",
   location: "Kabale, Uganda",
   socials: [

@@ -4,6 +4,8 @@ import { Reveal } from "./Reveal";
 import { Wordmark } from "./Wordmark";
 
 const socialLinks = [
+  { label: "WhatsApp", icon: "message", href: "https://wa.me/256789268084" },
+  { label: "Phone", icon: "phone", href: "tel:+256789268084" },
   { label: "X / Twitter", icon: "twitter", href: "https://x.com/edgarrut5" },
   { label: "Facebook", icon: "facebook", href: "https://www.facebook.com/profile.php?id=61550744050874" },
   { label: "GitHub", icon: "github", href: "https://github.com/EdgarA256" },
@@ -11,6 +13,7 @@ const socialLinks = [
 
 function ContactChannels() {
   const hasEmail = Boolean(profile.email);
+  const hasPhone = Boolean(profile.phone);
   const hasWhatsapp = Boolean(profile.whatsapp);
   const hasSocials = profile.socials.length > 0;
 
@@ -51,6 +54,23 @@ function ContactChannels() {
             name="arrow-up-right"
             className="ml-auto h-4 w-4 shrink-0 text-text/40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent"
           />
+        </a>
+      )}
+
+      {hasPhone && (
+        <a
+          href={`tel:${profile.phone?.replace(/\s/g, "")}`}
+          className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-5 transition-colors duration-300 hover:border-accent/50 hover:bg-raised"
+        >
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-bg">
+            <Icon name="phone" className="h-5 w-5" />
+          </span>
+          <span className="flex flex-col">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/50">
+              Phone
+            </span>
+            <span className="mt-1 font-medium text-text">{profile.phone}</span>
+          </span>
         </a>
       )}
 
