@@ -26,7 +26,7 @@ function ContactChannels() {
         <p className="max-w-md font-serif text-xl italic leading-relaxed text-text/80">
           I am still setting up my contact details — check back soon.
         </p>
-        <p className="max-w-sm text-sm leading-relaxed text-text/50">
+        <p className="max-w-sm text-sm leading-relaxed text-text/70">
           In the meantime, the invitation to connect is already open. I look forward to hearing
           from you.
         </p>
@@ -45,7 +45,7 @@ function ContactChannels() {
             <Icon name="mail" className="h-5 w-5" />
           </span>
           <span className="flex flex-col">
-            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/50">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/65">
               Email
             </span>
             <span className="mt-1 truncate font-medium text-text">{profile.email}</span>
@@ -66,7 +66,7 @@ function ContactChannels() {
             <Icon name="phone" className="h-5 w-5" />
           </span>
           <span className="flex flex-col">
-            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/50">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/65">
               Phone
             </span>
             <span className="mt-1 font-medium text-text">{profile.phone}</span>
@@ -85,7 +85,7 @@ function ContactChannels() {
             <Icon name="whatsapp" className="h-5 w-5" />
           </span>
           <span className="flex flex-col">
-            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/50">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/65">
               WhatsApp
             </span>
             <span className="mt-1 font-medium text-text">{profile.whatsapp}</span>
@@ -109,7 +109,7 @@ function ContactChannels() {
             <Icon name={s.icon} className="h-5 w-5" />
           </span>
           <span className="flex flex-col">
-            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/50">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/65">
               {s.label}
             </span>
             <span className="mt-1 truncate font-medium text-text">{s.href.replace(/^https?:\/\//, "")}</span>
@@ -166,13 +166,13 @@ export function Contact() {
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
             <div className="flex flex-col gap-4">
               <Wordmark compact />
-              <p className="max-w-xs text-sm leading-relaxed text-text/50">
+              <p className="max-w-xs text-sm leading-relaxed text-text/70">
                 {profile.tagline}
               </p>
             </div>
 
             <div className="flex flex-col gap-4">
-              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/40">
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/65">
                 Connect
               </p>
               <div className="flex items-center gap-3">
@@ -192,15 +192,15 @@ export function Contact() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/40">
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/65">
                 Navigate
               </p>
-              <nav className="flex flex-col gap-2" aria-label="Footer">
+              <nav className="-mx-3 flex flex-col" aria-label="Footer">
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-sm font-medium text-text/60 transition-colors hover:text-accent"
+                    className="-mx-3 rounded-lg px-3 py-3 text-sm font-medium text-text/60 transition-colors hover:bg-surface hover:text-accent"
                   >
                     {link.label}
                   </a>
@@ -210,12 +210,12 @@ export function Contact() {
           </div>
 
           <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-border pt-6 sm:flex-row sm:items-center">
-            <p className="text-sm text-text/40">
+            <p className="text-sm text-text/65">
               &copy; {YEAR} {profile.name}. {profile.role}.
             </p>
             <a
               href="#top"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-text/60 transition-colors hover:text-accent"
+              className="group -mx-2 inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm font-medium text-text/60 transition-colors hover:text-accent"
             >
               Back to top
               <span className="flex h-9 w-9 items-center justify-center rounded-full border border-border transition-all duration-300 group-hover:-translate-y-1 group-hover:border-accent">

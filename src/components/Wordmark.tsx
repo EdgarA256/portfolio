@@ -10,7 +10,7 @@ export function Wordmark({ tone = "dark", compact = false }: WordmarkProps) {
   const subColor = tone === "dark" ? "text-muted" : "text-muted";
 
   return (
-    <a href="#top" className="group flex items-center gap-3" aria-label="Agaba Edgar Ruteisire — home">
+    <a href="#top" className="group -mx-2 flex items-center gap-3 rounded-lg px-2 py-1" aria-label="Agaba Edgar Ruteisire — home">
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-accent text-bg transition-transform duration-300 group-hover:-rotate-6">
         <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" fill="currentColor" aria-hidden="true">
           <path d="M12 2.5c-4.6 4-6.4 8.4-6.4 11.2a6.4 6.4 0 0 0 12.8 0c0-2.8-1.8-7.2-6.4-11.2Z" />

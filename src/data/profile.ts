@@ -190,7 +190,7 @@ export const afroduuka: Recommendation = {
   description:
     "AfroDuuka is a modern inventory and business management system designed for African retailers. It brings sales, stock, suppliers, and branches into one clear view — helping growing businesses run today's operations and plan for the next. As a finance student, I pay attention to tools that handle the numbers properly. AfroDuuka does exactly that.",
   link: "https://afroduuka-ui.onrender.com/",
-  image: "/images/afroduuka-dashboard.png",
+  image: "/images/afroduuka.jpg",
   features: [
     "Real-time inventory tracking",
     "Automated WhatsApp alerts",

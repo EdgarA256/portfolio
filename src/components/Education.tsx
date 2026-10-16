@@ -65,7 +65,7 @@ export function Education() {
 
           <Reveal delay={0.08}>
             <div>
-              <p className="flex items-center gap-2.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-text/50">
+              <p className="flex items-center gap-2.5 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-text/65">
                 <span className="h-px w-7 bg-accent" aria-hidden="true" />
                 Looking ahead
               </p>
@@ -80,7 +80,7 @@ export function Education() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm italic text-text/40">
+              <p className="mt-4 text-sm italic text-text/65">
                 This space is ready to grow as coursework, projects, and certifications take shape.
               </p>
             </div>

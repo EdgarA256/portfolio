@@ -43,7 +43,7 @@ export function Journey() {
                   <h3 className="font-serif text-xl font-medium text-text transition-transform duration-300 group-hover:translate-x-1">
                     {theme.title}
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-text/50">
+                  <p className="mt-1.5 text-sm leading-relaxed text-text/65">
                     {theme.description}
                   </p>
                 </div>
