@@ -4,11 +4,11 @@ import { Reveal } from "./Reveal";
 import { Wordmark } from "./Wordmark";
 
 const socialLinks = [
-  { label: "WhatsApp", icon: "message", href: "https://wa.me/256789268084" },
-  { label: "Phone", icon: "phone", href: "tel:+256789268084" },
-  { label: "X / Twitter", icon: "twitter", href: "https://x.com/edgarrut5" },
-  { label: "Facebook", icon: "facebook", href: "https://www.facebook.com/profile.php?id=61550744050874" },
-  { label: "GitHub", icon: "github", href: "https://github.com/EdgarA256" },
+  { label: "WhatsApp", icon: "whatsapp", href: "https://wa.me/256789268084", color: "#25D366" },
+  { label: "Phone", icon: "phone", href: "tel:+256789268084", color: "#34d399" },
+  { label: "X / Twitter", icon: "twitter", href: "https://x.com/edgarrut5", color: "#e7e9ea" },
+  { label: "Facebook", icon: "facebook", href: "https://www.facebook.com/profile.php?id=61550744050874", color: "#1877F2" },
+  { label: "GitHub", icon: "github", href: "https://github.com/EdgarA256", color: "#f0f6fc" },
 ];
 
 function ContactChannels() {
@@ -82,7 +82,7 @@ function ContactChannels() {
           className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-5 transition-colors duration-300 hover:border-accent/50 hover:bg-raised"
         >
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-bg">
-            <Icon name="message" className="h-5 w-5" />
+            <Icon name="whatsapp" className="h-5 w-5" />
           </span>
           <span className="flex flex-col">
             <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-text/50">
@@ -182,7 +182,8 @@ export function Contact() {
                     href={s.href}
                     aria-label={s.label}
                     title={s.label}
-                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-surface text-text/70 transition-all duration-300 hover:border-accent hover:bg-accent/10 hover:text-accent"
+                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-surface transition-all duration-300 hover:scale-105"
+                    style={{ color: s.color }}
                   >
                     <Icon name={s.icon} className="h-5 w-5" />
                   </a>

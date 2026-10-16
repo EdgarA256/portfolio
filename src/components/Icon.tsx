@@ -34,6 +34,7 @@ import {
   ChevronRight,
   type LucideIcon,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const icons: Record<string, LucideIcon> = {
   sprout: Sprout,
@@ -59,6 +60,7 @@ const icons: Record<string, LucideIcon> = {
   mail: Mail,
   message: MessageCircle,
   phone: Phone,
+  whatsapp: FaWhatsapp as unknown as LucideIcon,
   "arrow-up": ArrowUp,
   "arrow-right": ArrowRight,
   "arrow-up-right": ArrowUpRight,
