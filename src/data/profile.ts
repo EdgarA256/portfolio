@@ -35,6 +35,15 @@ export type Opportunity = {
   icon: string;
 };
 
+export type Recommendation = {
+  name: string;
+  tagline: string;
+  description: string;
+  link: string;
+  image: string;
+  features: string[];
+};
+
 export const profile = {
   name: "Agaba Edgar Ruteisire",
   shortName: "Edgar",
@@ -48,6 +57,10 @@ export const profile = {
   linkedin: "",
   location: "Kabale, Uganda",
   socials: [] as { label: string; href: string; icon: string }[],
+  registrationNumber: "2025/A/KAF/1686/F",
+  idNumber: "2501501686",
+  faculty: "FEMS",
+  portrait: "/images/edgar-portrait.jpg",
 };
 
 export const navLinks: NavLink[] = [
@@ -165,6 +178,21 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const projects: Project[] = [];
+
+export const afroduuka: Recommendation = {
+  name: "AfroDuuka",
+  tagline: "Business software, built for Africa",
+  description:
+    "AfroDuuka is a modern inventory and business management system designed for African retailers. It brings sales, stock, suppliers, and branches into one clear view — helping growing businesses run today's operations and plan for the next. As a finance student, I pay attention to tools that handle the numbers properly. AfroDuuka does exactly that.",
+  link: "https://afroduuka-ui.onrender.com/",
+  image: "/images/afroduuka-dashboard.png",
+  features: [
+    "Real-time inventory tracking",
+    "Automated WhatsApp alerts",
+    "Profit & loss reports",
+    "Multi-branch management",
+  ],
+};
 
 export const journeyIntro =
   "This is where the story continues beyond the classroom — lessons learned, practical exposure, books and ideas, and the small milestones that mark a student's path. New entries will appear here as the journey unfolds.";

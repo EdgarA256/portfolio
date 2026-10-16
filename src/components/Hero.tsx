@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { profile } from "../data/profile";
 import { Icon } from "./Icon";
-import { PortraitPlaceholder } from "./PortraitPlaceholder";
+import { Portrait } from "./Portrait";
 
 const container = {
   hidden: {},
@@ -118,7 +118,7 @@ export function Hero() {
             className="absolute -inset-4 -z-10 rounded-[2.25rem] border border-accent/30"
             aria-hidden="true"
           />
-          <PortraitPlaceholder />
+          <Portrait />
           <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-border bg-bg px-5 py-4 shadow-soft sm:block">
             <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-faint">
               Studying at

@@ -1,6 +1,6 @@
 import { aboutHighlights, profile } from "../data/profile";
 import { Icon } from "./Icon";
-import { PortraitPlaceholder } from "./PortraitPlaceholder";
+import { Portrait } from "./Portrait";
 import { Reveal } from "./Reveal";
 import { Section } from "./Section";
 import { SectionHeading } from "./SectionHeading";
@@ -21,7 +21,7 @@ export function About() {
 
       <div className="mt-16 grid gap-14 lg:mt-20 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
         <Reveal className="lg:sticky lg:top-28 lg:self-start">
-          <PortraitPlaceholder />
+          <Portrait />
           <div className="mt-6 flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
             <Icon name="map-pin" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
             <p className="text-sm leading-relaxed text-muted">
