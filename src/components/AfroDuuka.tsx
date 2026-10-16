@@ -78,7 +78,7 @@ export function AfroDuuka() {
                 <img
                   src={afroduuka.image}
                   alt="AfroDuuka dashboard — inventory management system"
-                  className="aspect-[16/10] w-full object-cover object-top"
+                  className="aspect-[16/10] w-full object-cover"
                   loading="lazy"
                 />
               </div>
