@@ -50,18 +50,30 @@ export function Nav() {
         setOpen(false);
         toggleRef.current?.focus();
       }
+      if (e.key === "Tab") {
+        const panel = panelRef.current;
+        if (!panel) return;
+        const focusables = panel.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled])'
+        );
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (!first || !last) return;
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     };
     document.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = prev;
       document.removeEventListener("keydown", onKey);
+      toggleRef.current?.focus();
     };
-  }, [open]);
-
-  useEffect(() => {
-    if (!open) return;
-    const toggle = toggleRef.current;
-    return () => toggle?.focus();
   }, [open]);
 
   const headerBg = scrolled
@@ -82,7 +94,7 @@ export function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                aria-current={isActive ? "true" : undefined}
+                 aria-current={isActive ? "page" : undefined}
                 className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 ${
                   isActive ? "text-ink" : "text-muted hover:text-ink"
                 }`}

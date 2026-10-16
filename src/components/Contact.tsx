@@ -15,12 +15,12 @@ function ContactChannels() {
           <Icon name="mail" className="h-6 w-6" />
         </span>
         <p className="max-w-md font-serif text-xl italic leading-relaxed text-ivory/85">
-          Contact details will appear here as they become available.
-        </p>
-        <p className="max-w-sm text-sm leading-relaxed text-ivory/55">
-          In the meantime, the invitation to connect is already open — add your email or social
-          links and this space will come alive.
-        </p>
+           I am still setting up my contact details — check back soon.
+         </p>
+         <p className="max-w-sm text-sm leading-relaxed text-ivory/55">
+           In the meantime, the invitation to connect is already open. I look forward to hearing
+           from you.
+         </p>
       </div>
     );
   }
